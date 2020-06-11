@@ -1,0 +1,112 @@
+. {
+    margin: 0px;
+}
+body {
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+header {
+    display: flex;
+    background-color: rgb(87,156,135);
+    border-bottom: 3px solid green;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(253,203,70);
+}  
+h1{
+    font-size: 78px;
+    
+}
+#container_top{
+    display: flex;
+    justify-content: center ;
+    margin-top: 100px;
+    
+}
+
+.menu_1{
+    height: 763px;
+    background: rgb(252,223,219);
+    width: 36%;
+    margin-right:100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    
+}
+
+.menu_2{
+    height: 763px;
+    background: rgb(255,245,254);
+    width: 36%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container_bottom{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu_3{
+    height: 763px;
+    background: rgb(249,249,249);
+    width: 36%;
+    margin: 90px 100px 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_4{
+    height: 763px;
+    background: rgb(253,255,253);
+    width: 36%;
+    margin-top: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px black;
+}
+aside {
+    background-color: rgb(87,156,135);
+    height: 120px;
+    max-width: 655px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 50px;
+    color:rgb(253,203,70);
+    padding: 0px 100px;
+    border-radius: 10%   
+    
+    
+}
+footer {
+    background-color: rgb(87,156,135);
+    height: 137px;
+    border-top: 3px solid ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(253,203,70);
+    margin-top: 80px;
+    font-size: 35px;
+    padding: 0px 36px 0px 40px;
+}
+h3 {
+    font-size: 42px;
+}
+section p{
+    font-size: 36px;
+}
