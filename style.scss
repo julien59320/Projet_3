@@ -1,0 +1,125 @@
+* {
+    margin: 0px;
+}
+
+/*---ceci est mon header---*/
+header {
+    height: 244px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(87,156,135);
+    border-bottom: 1px solid rgb(161,193,129);
+    a {
+        color: rgb(253,203,70);
+        text-decoration:none;
+        font-size: 72px;
+        justify-content: center;
+    }
+}
+/*-----ceci est ma section---*/
+section{
+    display: flex;
+    justify-content: center;
+}
+.menu {
+        margin-top: 95px;
+        display: flex;
+        width: 33%;
+        box-shadow: 1px 1px 10px black;
+        a{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            height: 755px;
+            width: 100%;
+        }
+    }
+.menu_1{
+    background-color: rgb(252, 223, 219);
+    margin-right: 100px;
+    h2{
+        color: #3c1218;
+        font-size: 44px;
+    }
+    h3{
+        color: #3C1218;
+        font-size: 40px;
+    }
+}
+.fa-music{
+    font-size: 100px;
+    background: -webkit-linear-gradient(left,#F36D68, #F78F6A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu_2{
+    background-color: rgb(255, 245, 254);
+    h2{
+        font-size: 44px;
+        background: -webkit-linear-gradient(left,#d8852e, #905BFD);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3{
+        color: #d8852e;
+        font-size: 40px;
+    }
+}
+.menu_3{
+    background-color: rgb(249,249,249);
+    margin-right: 100px;
+    h2{
+        font-size: 44px;
+        background: -webkit-linear-gradient(left,#0431DF, #0887FB);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;}
+        h3{
+            color: #0887FB;
+            font-size: 40px;
+        }
+    
+}
+.menu_4{
+    background-color: rgb(253, 253, 253);
+    h2{
+        font-size: 44px;
+        background: -webkit-linear-gradient(left,#3d9339, #c8fe94);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h3{
+        color: #3d9339;
+        font-size: 40px;
+    }
+ }
+aside{
+    margin: auto;
+    background-color:rgb(87,156,135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 120px;
+    border-radius: 15px;
+    margin: 88px auto;
+    color: rgb(253,203,70);
+    font-size: 45px;
+}
+/*----ceci est mon footer-----*/
+footer{
+    background-color: rgb(87,156,135);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 138px;
+    padding:0px 40px;
+    a{
+    color: rgb(253,203,70);
+    font-size: 40px;
+    text-decoration: none;
+    }
+}
