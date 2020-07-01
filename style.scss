@@ -1,23 +1,53 @@
 * {
     margin: 0px;
 }
+/*---variable---*/
 $color-prymary:rgb(87,156,135);
 $color-text:rgb(253,203,70);
+$color-m1: rgb(252, 223, 219);
+$color-m2: rgb(255, 245, 254);
+$color-m3: rgb(249,249,249);
+$color-m4: rgb(253,253,253);
+/*---mixin----*/
+@mixin border_header{
+    border-bottom: 2px solid rgb(161,193,129);   
+}
+@mixin border_footer{
+    border-top: 2px solid rgb(161,193,129);
+}
+/*---keyframes---*/
 @keyframes dots{
   50%{ 
     opacity: 0;
     transform: scale(0.7) translateY(10);
   }
 }
+@keyframes wiggle {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
 
-/*---ceci est mon header---*/
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+      transform: translate3d(10px, 0, 0);
+    }
+
+}
+/*---header---*/
 header {
     height: 244px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $color-prymary;
-    border-bottom: 1px solid rgb(161,193,129);
+    @include border_header;
     a {
         color: $color-text;
         text-decoration:none;
@@ -25,11 +55,19 @@ header {
         justify-content: center;
     }
 }
-/*-----ceci est ma section---*/
+/*----barre_de_recheche----*/
+input{
+    width: 100%;
+    background-color: grey;
+    opacity: 0.8;
+    border: 1px solid grey;
+}
+/*-----section---*/
 section{
     display: flex;
     justify-content: center;
 }
+/*-----bloc_menu---*/
 .menu {
         line-height: 70px;
         margin-top: 95px;
@@ -46,8 +84,9 @@ section{
             width: 100%;
         }
     }
+    /*-----menu1---*/
 .menu_1{
-    background-color: rgb(252, 223, 219);
+    background-color: $color-m1;
     margin-right: 100px;
     h2{
         color:#3c1218 ;
@@ -64,8 +103,9 @@ section{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/*-----menu2---*/
 .menu_2{
-    background-color: rgb(255, 245, 254);
+    background-color: $color-m2;
     h2{
         font-size: 44px;
         background: -webkit-linear-gradient(left,#d8852e, #905BFD);
@@ -77,8 +117,9 @@ section{
         font-size: 40px;
     }
 }
+/*-----menu3---*/
 .menu_3{
-    background-color: rgb(249,249,249);
+    background-color: $color-m3;
     margin-right: 100px;
     h2{
         font-size: 44px;
@@ -90,8 +131,9 @@ section{
             font-size: 40px;
         }
 }
+/*-----menu4---*/
 .menu_4{
-    background-color: rgb(253, 253, 253);
+    background-color: $color-m4;
     h2{
         font-size: 44px;
         background: -webkit-linear-gradient(left,#3d9339, #c8fe94);
@@ -103,6 +145,7 @@ section{
         font-size: 40px;
     }
  }
+ /*-----transition_zoom---*/
 .zoom{
     transform: scale(1);
     transition-property: transform;
@@ -115,7 +158,6 @@ section{
 /*---prochainement---*/
  }
 aside{
-    margin: auto;
     background-color:$color-prymary;
     display: flex;
     align-items: center;
@@ -124,12 +166,13 @@ aside{
     height: 120px;
     border-radius: 15px;
     margin: 88px auto;
-    color: rgb(253,203,70);
+    color: $color-text;
     font-size: 45px;
     p{
         display: flex;
         margin-right: 30px;
     }
+    /*-----icônes---*/
     .fa-circle {
         font-size: 15px;
         margin-right: 20px;
@@ -139,10 +182,17 @@ aside{
         animation-iteration-count: infinite;
         animation-direction: alternate;
         transition-timing-function: ease-in-out;
+        &.fa-circle:nth-child(3){
+            animation-delay: 0.5s;
+        }
+        &.fa-circle:nth-child(4){
+            animation-delay: 1s;
+        }
     }
 }
-/*----ceci est mon footer-----*/
+/*----footer----*/
 footer{
+    @include border_footer;
     background-color: $color-prymary;
     display: flex;
     align-items: center;
@@ -153,5 +203,19 @@ footer{
     color: $color-text;
     font-size: 40px;
     text-decoration: none;
+    &:hover{
+        animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 100px;
+        }
+    }
+}
+/*---media query petit ecran---*/
+@media screen and (max-width:425px){
+
+    section{
+        display: flex;
+        flex-direction: column;
     }
 }

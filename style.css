@@ -1,7 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0px;
 }
 
+/*---variable---*/
+/*---mixin----*/
+/*---keyframes---*/
 @-webkit-keyframes dots {
   50% {
     opacity: 0;
@@ -9,7 +13,6 @@
             transform: scale(0.7) translateY(10);
   }
 }
-
 @keyframes dots {
   50% {
     opacity: 0;
@@ -18,7 +21,45 @@
   }
 }
 
-/*---ceci est mon header---*/
+@-webkit-keyframes wiggle {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes wiggle {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+
+/*---header---*/
 header {
   height: 244px;
   display: -webkit-box;
@@ -31,7 +72,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #579c87;
-  border-bottom: 1px solid #a1c181;
+  border-bottom: 2px solid #a1c181;
 }
 
 header a {
@@ -43,7 +84,15 @@ header a {
           justify-content: center;
 }
 
-/*-----ceci est ma section---*/
+/*----barre_de_recheche----*/
+input {
+  width: 100%;
+  background-color: grey;
+  opacity: 0.8;
+  border: 1px solid grey;
+}
+
+/*-----section---*/
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +102,7 @@ section {
           justify-content: center;
 }
 
+/*-----bloc_menu---*/
 .menu {
   line-height: 70px;
   margin-top: 95px;
@@ -80,6 +130,7 @@ section {
   width: 100%;
 }
 
+/*-----menu1---*/
 .menu_1 {
   background-color: #fcdfdb;
   margin-right: 100px;
@@ -102,6 +153,7 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
+/*-----menu2---*/
 .menu_2 {
   background-color: #fff5fe;
 }
@@ -118,6 +170,7 @@ section {
   font-size: 40px;
 }
 
+/*-----menu3---*/
 .menu_3 {
   background-color: #f9f9f9;
   margin-right: 100px;
@@ -135,6 +188,7 @@ section {
   font-size: 40px;
 }
 
+/*-----menu4---*/
 .menu_4 {
   background-color: #fdfdfd;
 }
@@ -151,6 +205,7 @@ section {
   font-size: 40px;
 }
 
+/*-----transition_zoom---*/
 .zoom {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -170,7 +225,6 @@ section {
 }
 
 aside {
-  margin: auto;
   background-color: #579c87;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,6 +241,7 @@ aside {
   margin: 88px auto;
   color: #fdcb46;
   font-size: 45px;
+  /*-----icônes---*/
 }
 
 aside p {
@@ -212,8 +267,19 @@ aside .fa-circle {
           transition-timing-function: ease-in-out;
 }
 
-/*----ceci est mon footer-----*/
+aside .fa-circle.fa-circle:nth-child(3) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+aside .fa-circle.fa-circle:nth-child(4) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+/*----footer----*/
 footer {
+  border-top: 2px solid #a1c181;
   background-color: #579c87;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,5 +298,29 @@ footer a {
   color: #fdcb46;
   font-size: 40px;
   text-decoration: none;
+}
+
+footer a:hover {
+  -webkit-animation: wiggle 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: wiggle 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+
+/*---media query petit ecran---*/
+@media screen and (max-width: 425px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
