@@ -162,12 +162,12 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45%;
+    width: 50%;
     height: 120px;
     border-radius: 15px;
     margin: 88px auto;
     color: $color-text;
-    font-size: 45px;
+    font-size: 40px;
     p{
         display: flex;
         margin-right: 30px;
@@ -211,11 +211,51 @@ footer{
         }
     }
 }
-/*---media query petit ecran---*/
-@media screen and (max-width:425px){
 
+/*---media query mobile petit ecran ---*/
+@media screen and (max-width:425px){
+    header{
+        height: 130px;
+    }
     section{
         display: flex;
         flex-direction: column;
+        margin: 10px;
+        .menu{
+            width: 100%;
+            margin-top: 10px;
+            a{
+                height: 500px;
+            }
+        }
     }
+    aside{
+        margin: auto;
+        width: 85%;
+        height: 80px;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    footer{
+        display: flex;
+        padding: 10px;
+        height: 80px;
+        a{
+            font-size: 25px;
+            margin: auto;
+        }
+    }
+}
+/*---media query mobile petit ecran ---*/
+@media screen and (max-width:320px){
+aside {
+    font-size: 22px;
+    .fa-circle{
+        font-size: 12px;
+    }
+}
+footer{ 
+    margin: auto;
+}
 }

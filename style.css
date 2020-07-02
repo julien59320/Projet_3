@@ -235,12 +235,12 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 45%;
+  width: 50%;
   height: 120px;
   border-radius: 15px;
   margin: 88px auto;
   color: #fdcb46;
-  font-size: 45px;
+  font-size: 40px;
   /*-----icônes---*/
 }
 
@@ -311,8 +311,11 @@ footer a:hover {
           perspective: 100px;
 }
 
-/*---media query petit ecran---*/
+/*---media query mobile petit ecran ---*/
 @media screen and (max-width: 425px) {
+  header {
+    height: 130px;
+  }
   section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,6 +324,46 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 10px;
+  }
+  section .menu {
+    width: 100%;
+    margin-top: 10px;
+  }
+  section .menu a {
+    height: 500px;
+  }
+  aside {
+    margin: auto;
+    width: 85%;
+    height: 80px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    height: 80px;
+  }
+  footer a {
+    font-size: 25px;
+    margin: auto;
+  }
+}
+
+/*---media query mobile petit ecran ---*/
+@media screen and (max-width: 320px) {
+  aside {
+    font-size: 22px;
+  }
+  aside .fa-circle {
+    font-size: 12px;
+  }
+  footer {
+    margin: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
