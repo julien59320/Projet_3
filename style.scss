@@ -215,14 +215,18 @@ footer{
 /*---media query mobile petit ecran ---*/
 @media screen and (max-width:425px){
     header{
-        height: 130px;
+        height: 60px ;
+        a{
+        font-size: 50px;
+        }
     }
     section{
         display: flex;
         flex-direction: column;
-        margin: 10px;
+        
         .menu{
-            width: 100%;
+            margin: auto;
+            width: 80%;
             margin-top: 10px;
             a{
                 height: 500px;
@@ -231,31 +235,23 @@ footer{
     }
     aside{
         margin: auto;
-        width: 85%;
-        height: 80px;
-        font-size: 30px;
+        width: 50%;
+        height: 40px;
+        font-size: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
+        .fa-circle{
+            font-size: 10px;
+            margin: 4px;
+        }
     }
     footer{
         display: flex;
         padding: 10px;
-        height: 80px;
+        height: 60px;
         a{
-            font-size: 25px;
-            margin: auto;
+            font-size: 20px;
         }
     }
 }
 /*---media query mobile petit ecran ---*/
-@media screen and (max-width:320px){
-aside {
-    font-size: 22px;
-    .fa-circle{
-        font-size: 12px;
-    }
-}
-footer{ 
-    margin: auto;
-}
-}
