@@ -2,66 +2,13 @@
     margin: 0px;
 }
 /*---variable---*/
-$color-prymary:rgb(87,156,135);
-$color-text:rgb(253,203,70);
-$color-m1: rgb(252, 223, 219);
-$color-m2: rgb(255, 245, 254);
-$color-m3: rgb(249,249,249);
-$color-m4: rgb(253,253,253);
+@import "./layout/utils/layout/header.scss";
 /*---mixin----*/
-@mixin border_header{
-    border-bottom: 2px solid rgb(161,193,129);   
-}
-@mixin border_footer{
-    border-top: 2px solid rgb(161,193,129);
-}
+@import "./layout/utils/mixin.scss";
 /*---keyframes---*/
-@keyframes dots{
-  50%{ 
-    opacity: 0;
-    transform: scale(0.7) translateY(10);
-  }
-}
-@keyframes wiggle {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-
-    40%, 60% {
-      transform: translate3d(10px, 0, 0);
-    }
-
-}
+@import "./layout/utils/keyframes.scss";
 /*---header---*/
-header {
-    height: 244px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $color-prymary;
-    @include border_header;
-    a {
-        color: $color-text;
-        text-decoration:none;
-        font-size: 72px;
-        justify-content: center;
-    }
-}
-/*----barre_de_recheche----*/
-input{
-    width: 100%;
-    background-color: grey;
-    opacity: 0.8;
-    border: 1px solid grey;
-}
+@import "./layout/utils/layout/header.scss";
 /*-----section---*/
 section{
     display: flex;
@@ -158,7 +105,7 @@ section{
 /*---prochainement---*/
  }
 aside{
-    background-color:$color-prymary;
+    background-color:$color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,34 +131,15 @@ aside{
         transition-timing-function: ease-in-out;
         &.fa-circle:nth-child(3){
             animation-delay: 0.5s;
-        }
+            color:  #e04f4f;}
         &.fa-circle:nth-child(4){
+            color:  #4f803c;
             animation-delay: 1s;
         }
     }
 }
 /*----footer----*/
-footer{
-    @include border_footer;
-    background-color: $color-prymary;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 138px;
-    padding:0px 40px;
-    a{
-    color: $color-text;
-    font-size: 40px;
-    text-decoration: none;
-    &:hover{
-        animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-        transform: translate3d(0, 0, 0);
-        backface-visibility: hidden;
-        perspective: 100px;
-        }
-    }
-}
-
+@import "./layout/utils/layout/footer.scss";
 /*---media query mobile petit ecran ---*/
 @media screen and (max-width:425px){
     header{
@@ -225,9 +153,12 @@ footer{
         flex-direction: column;
         
         .menu{
+            height: 400px;
+            display: flex;
+            align-items: center;
             margin: auto;
-            width: 80%;
-            margin-top: 10px;
+            width: 70%;
+            margin-top: 30px;
             h2{
                 font-size: 25px;
             }
@@ -247,6 +178,9 @@ footer{
         font-size: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
+        p{
+            margin-right: 5px;
+        }
         .fa-circle{
             font-size: 10px;
             margin: 4px;

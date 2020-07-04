@@ -1,0 +1,23 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+/*----footer----*/
+footer{
+    @include border_footer;
+    background-color: $color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 138px;
+    padding:0px 40px;
+    a{
+    color: $color-text;
+    font-size: 40px;
+    text-decoration: none;
+    &:hover{
+        animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 100px;
+        }
+    }
+}

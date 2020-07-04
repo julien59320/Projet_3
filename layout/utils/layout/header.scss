@@ -1,0 +1,17 @@
+@import "../variable.scss";
+@import "../mixin.scss";
+/*---header---*/
+header {
+    height: 244px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-primary;
+    @include border_header;
+    a {
+        color: $color-text;
+        text-decoration:none;
+        font-size: 72px;
+        justify-content: center;
+    }
+}

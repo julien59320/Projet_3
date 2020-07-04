@@ -1,0 +1,7 @@
+/*---mixin----*/
+@mixin border_header{
+    border-bottom: 2px solid rgb(161,193,129);   
+}
+@mixin border_footer{
+    border-top: 2px solid rgb(161,193,129);
+}

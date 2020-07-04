@@ -4,7 +4,36 @@
 }
 
 /*---variable---*/
+/*---variable---*/
 /*---mixin----*/
+/*---header---*/
+header {
+  height: 244px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #579c87;
+  border-bottom: 2px solid #a1c181;
+}
+
+header a {
+  color: #fdcb46;
+  text-decoration: none;
+  font-size: 72px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*---mixin----*/
+/*---mixin----*/
+/*---keyframes---*/
 /*---keyframes---*/
 @-webkit-keyframes dots {
   50% {
@@ -60,6 +89,9 @@
 }
 
 /*---header---*/
+/*---variable---*/
+/*---mixin----*/
+/*---header---*/
 header {
   height: 244px;
   display: -webkit-box;
@@ -82,14 +114,6 @@ header a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-/*----barre_de_recheche----*/
-input {
-  width: 100%;
-  background-color: grey;
-  opacity: 0.8;
-  border: 1px solid grey;
 }
 
 /*-----section---*/
@@ -270,13 +294,18 @@ aside .fa-circle {
 aside .fa-circle.fa-circle:nth-child(3) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+  color: #e04f4f;
 }
 
 aside .fa-circle.fa-circle:nth-child(4) {
+  color: #4f803c;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
+/*----footer----*/
+/*---variable---*/
+/*---mixin----*/
 /*----footer----*/
 footer {
   border-top: 2px solid #a1c181;
@@ -329,9 +358,16 @@ footer a:hover {
             flex-direction: column;
   }
   section .menu {
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: auto;
-    width: 80%;
-    margin-top: 10px;
+    width: 70%;
+    margin-top: 30px;
   }
   section .menu h2 {
     font-size: 25px;
@@ -349,6 +385,9 @@ footer a:hover {
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+  aside p {
+    margin-right: 5px;
   }
   aside .fa-circle {
     font-size: 10px;
