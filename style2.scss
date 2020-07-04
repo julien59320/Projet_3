@@ -1,0 +1,48 @@
+*{
+    margin: auto;
+    padding: 0px;
+}
+/*---header---*/
+@import "./layout/utils/layout/header.scss";
+/*---footer----*/
+@import "./layout/utils/layout/footer.scss";
+/*----main-----*/
+main{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 1190px;
+    box-shadow: 0px 0px 10px grey;
+}
+article{
+    margin: auto;
+}
+.submenu_header{
+    padding-bottom: 20px;
+}
+section{
+    
+    padding-top: 84px;
+    padding-bottom:3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1190px;
+    background-color: rgb(252,223,219);
+    .row{
+        width: 934px;
+        display: flex;
+        img{
+            margin: 0px;
+        }
+        .menu{
+        width: 934px;
+        line-height: 60px;
+        }
+        .menu_price{
+        
+        }
+        
+    }
+}

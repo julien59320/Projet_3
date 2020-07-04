@@ -1,0 +1,127 @@
+* {
+  margin: auto;
+  padding: 0px;
+}
+
+/*---header---*/
+/*---variable---*/
+/*---mixin----*/
+/*---header---*/
+header {
+  height: 244px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #579c87;
+  border-bottom: 2px solid #a1c181;
+}
+
+header a {
+  color: #fdcb46;
+  text-decoration: none;
+  font-size: 72px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*---footer----*/
+/*---variable---*/
+/*---mixin----*/
+/*----footer----*/
+footer {
+  border-top: 2px solid #a1c181;
+  background-color: #579c87;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 138px;
+  padding: 0px 40px;
+}
+
+footer a {
+  color: #fdcb46;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  -webkit-animation: wiggle 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: wiggle 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+
+/*----main-----*/
+main {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: center;
+  width: 1190px;
+  -webkit-box-shadow: 0px 0px 10px grey;
+          box-shadow: 0px 0px 10px grey;
+}
+
+article {
+  margin: auto;
+}
+
+.submenu_header {
+  padding-bottom: 20px;
+}
+
+section {
+  padding-top: 84px;
+  padding-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1190px;
+  background-color: #fcdfdb;
+}
+
+section .row {
+  width: 934px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .row img {
+  margin: 0px;
+}
+
+section .row .menu {
+  width: 934px;
+  line-height: 60px;
+}
+/*# sourceMappingURL=style2.css.map */
