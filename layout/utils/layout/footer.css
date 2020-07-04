@@ -3,7 +3,7 @@
 /*----footer----*/
 footer {
   border-top: 2px solid #a1c181;
-  background-color: orange;
+  background-color: #579c87;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +18,7 @@ footer {
 }
 
 footer a {
-  color: #579c87;
+  color: #fdcb46;
   font-size: 40px;
   text-decoration: none;
 }
