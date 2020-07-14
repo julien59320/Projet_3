@@ -6,32 +6,6 @@
 /*---variable---*/
 /*---variable---*/
 /*---mixin----*/
-/*---header---*/
-header {
-  height: 244px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #579c87;
-  border-bottom: 2px solid #a1c181;
-}
-
-header a {
-  color: #fdcb46;
-  text-decoration: none;
-  font-size: 72px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-/*---mixin----*/
 /*---mixin----*/
 /*---keyframes---*/
 /*---keyframes---*/
@@ -116,6 +90,7 @@ header a {
           justify-content: center;
 }
 
+/*---gradiant---*/
 /*-----section---*/
 section {
   display: -webkit-box;
@@ -352,7 +327,10 @@ footer a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   main .menu {
     margin: 4%;

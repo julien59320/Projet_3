@@ -1,0 +1,20 @@
+@mixin color-icones {
+    background: -webkit-linear-gradient(left,#F36D68, #F78F6A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin gradient_chic {
+    background: -webkit-linear-gradient(left,#d8852e, #905BFD);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+@mixin gradient_delice{
+    background: -webkit-linear-gradient(left,#0431DF, #0887FB);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+@mixin gradient_palette {
+    background: -webkit-linear-gradient(left,#3d9339, #c8fe94);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}

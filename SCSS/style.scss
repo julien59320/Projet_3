@@ -2,13 +2,15 @@
     margin: 0px;
 }
 /*---variable---*/
-@import "./layout/utils/layout/header.scss";
+@import "../layout/utils/utils/variable.scss";
 /*---mixin----*/
-@import "./layout/utils/mixin.scss";
+@import "../layout/utils/utils/mixin.scss";
 /*---keyframes---*/
-@import "./layout/utils/keyframes.scss";
+@import "../layout/utils/utils/keyframes.scss";
 /*---header---*/
-@import "./layout/utils/layout/header.scss";
+@import "../layout/utils/layout/header.scss";
+/*---gradiant---*/
+@import "../layout/utils/utils/gradiant.scss";
 /*-----section---*/
 section{
     display: flex;
@@ -33,31 +35,29 @@ section{
     }
     /*-----menu1---*/
 .menu_1{
-    background-color: $color-m1;
+    background-color: $back-color-m1;
     margin-right: 100px;
     h2{
-        color:#3c1218 ;
+        color: $color-m1 ;
         font-size: 44px;
     }
     h3{
-        color:#3c1218 ;
+        color: $color-m1 ;
         font-size: 40px;
     }
 }
 .fa-music{
     font-size: 70px;
-    background: -webkit-linear-gradient(left,#F36D68, #F78F6A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include color-icones;
+    
 }
 /*-----menu2---*/
 .menu_2{
-    background-color: $color-m2;
+    background-color: $back-color-m2;
+
     h2{
         font-size: 44px;
-        background: -webkit-linear-gradient(left,#d8852e, #905BFD);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradient_chic;
     }
     h3{
         color: #d8852e;
@@ -66,26 +66,24 @@ section{
 }
 /*-----menu3---*/
 .menu_3{
-    background-color: $color-m3;
+    background-color: $back-color-m3;
     margin-right: 100px;
     h2{
         font-size: 44px;
-        background: -webkit-linear-gradient(left,#0431DF, #0887FB);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;}
-        h3{
-            color: #0887FB;
-            font-size: 40px;
-        }
+        @include gradient_delice;
+    }
+    h3{
+        color: #0887FB;
+        font-size: 40px;
+    }
+    
 }
 /*-----menu4---*/
 .menu_4{
-    background-color: $color-m4;
+    background-color: $back-color-m4;
     h2{
         font-size: 44px;
-        background: -webkit-linear-gradient(left,#3d9339, #c8fe94);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include gradient_palette;
     }
     h3{
         color: #3d9339;
@@ -139,7 +137,7 @@ aside{
     }
 }
 /*----footer----*/
-@import "./layout/utils/layout/footer.scss";
+@import "../layout/utils/layout/footer.scss";
 /*-----media_screen_tablette-----*/
 @media screen and (min-width:426px)and (max-width:768px){
     header{
@@ -150,7 +148,8 @@ aside{
     }
     main{
         display: flex;
-        height: 500px;
+        flex-direction: column;
+        
         
         .menu{
             margin: 4%;
