@@ -1,24 +1,45 @@
 /*---Gradiant---*/
-@import "../layout/utils/utils/gradiant.scss";
+@import "../utils/gradiant.scss";
 /*---Variable---*/
-@import "../layout/utils/utils/variable.scss";
+@import "../utils/variable.scss";
+/*---Font-face---*/
+@import "../Fonts/police.scss";
 /*---header---*/
-@import "../layout/utils/layout/header.scss";
+@import "../layout/header.scss";
 /*---bloc_menu---*/
-@import "../layout/utils/layout/bloc_menu.scss";
+@import "../layout/bloc_menu.scss";
 /*--footer--*/
-@import "../layout/utils/layout/footer.scss";
+@import "../layout/footer.scss";
+
 body{
     color: rgb(61, 19, 25);
+}
+h4{
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 .note{
     main{
         background-color: $back-color-m1;
+        font-family: "devon_shire";
+        
+    }
+    .fa-music{
+    @include color-icones;
+    }
+}
+.menu_head{
+    h2{
+        padding-top: 40px;
+        padding-right: 10px;
+        height: 70px;
     }
 }
 .delice{
+    
     main{
         background-color: $back-color-m3;
+        font-family: "dancing";
         h2{
             @include gradient-delice
         }
@@ -27,8 +48,18 @@ body{
 .chic{
     main{
         background-color: $back-color-m2;
+        font-family: "kaushan";
         h2{
             @include gradient-chic;
+        }
+        .entre{
+            color: $color-text-m2-1;
+        }
+        .plat{
+            color: $color-text-m2-2;
+        }
+        .dessert{
+            color: $color-text-m2-3;
         }
     }
 }
@@ -61,24 +92,19 @@ body{
         margin-bottom: 10px;
     }
     main{
-    margin-top: 0px;
-    padding-bottom: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 40px;
         h2{
-        font-size: 50px;
+        font-size: 70px;
         height: 60px;
-    }
-        .names{
-            margin-top: 0px;
-            margin-bottom: 0px;
         }
     }
     section{
-        line-height: 5px;
         .row_menu{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 0px;
+        text-align: center;
+        padding: 0px ;
         }
     }
     .menu_footer{
@@ -93,19 +119,26 @@ body{
 
       h4{
         margin: auto;
+        padding-top: 30px;
         
       }
     
     section{
-        line-height: 25px;
         p{
             margin: 5px;
         }
         h2{
-            font-size: 25px;
+            font-size: 40px;
+            text-align: center;
         }
     }
     h2{
         font-size: 30px;
+    }
+    footer{
+        padding:5px;
+        a{
+        font-size: 20px;
+        }
     }
 }

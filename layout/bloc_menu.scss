@@ -15,25 +15,18 @@ main{
     margin: auto;
     box-shadow: 0px 0px 10px grey;
     margin-bottom: 135px;
-    padding-bottom: 200px;
+    padding-bottom: 200px;    
 }
 .names{
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 35px;
     align-items: center;
-    line-height: 35px;
-    h2{
-        height: 50px;
-        
-    }
+    
 }
 .menu_head{   
     font-size:50px;
     .fa-music{
-    font-size:100px;
+    font-size: 100px;
     margin-top: 70px;
-    background: -webkit-linear-gradient(left,#F36D68, #F78F6A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     }
@@ -47,6 +40,7 @@ section{
        display: flex;
        justify-content: space-between;
    }
+
 }
 img{
     display: flex;
@@ -59,10 +53,6 @@ img{
     padding: 0px 7%;
 }
 
-.menu_footer{
-    display: flex;
-    font-size: 50px;    
-}
 h4{
     font-size: 25px;
 }

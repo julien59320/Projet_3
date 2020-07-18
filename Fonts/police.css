@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "devon_shire";
+  src: url("../Fonts/devonshire-regular-webfont.woff") format("woff"), url("../Fonts/devonshire-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "croissant_one";
+  src: url("../Fonts/croissantone-regular-webfont.woff") format("woff"), url("../Fonts/croissantone-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../Fonts/dancingscript-variablefont_wght-webfont.woff") format("woff"), url("../Fonts/dancingscript-variablefont_wght-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "kaushan";
+  src: url("../Fonts/kaushanscript-regular-webfont.woff") format("woff"), url("../Fonts/kaushanscript-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "pax_bold";
+  src: url("../Fonts/pax_bold-webfont.woff") format("woff"), url("../Fonts/pax_bold-webfont.woff2") format("woff2");
+}
+/*# sourceMappingURL=police.css.map */

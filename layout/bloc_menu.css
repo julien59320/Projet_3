@@ -32,16 +32,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 35px;
-}
-
-.names h2 {
-  height: 50px;
 }
 
 .menu_head {
@@ -51,7 +44,6 @@ main {
 .menu_head .fa-music {
   font-size: 100px;
   margin-top: 70px;
-  background: -webkit-linear-gradient(left, #F36D68, #F78F6A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -93,13 +85,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0px 7%;
-}
-
-.menu_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 50px;
 }
 
 h4 {

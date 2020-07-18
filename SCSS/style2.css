@@ -1,6 +1,32 @@
 /*---Gradiant---*/
 /*---Variable---*/
 /*---variable---*/
+/*---Font-face---*/
+@font-face {
+  font-family: "devon_shire";
+  src: url("../Fonts/devonshire-regular-webfont.woff") format("woff"), url("../Fonts/devonshire-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "croissant_one";
+  src: url("../Fonts/croissantone-regular-webfont.woff") format("woff"), url("../Fonts/croissantone-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../Fonts/dancingscript-variablefont_wght-webfont.woff") format("woff"), url("../Fonts/dancingscript-variablefont_wght-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "kaushan";
+  src: url("../Fonts/kaushanscript-regular-webfont.woff") format("woff"), url("../Fonts/kaushanscript-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "pax_bold";
+  src: url("../Fonts/pax_bold-webfont.woff") format("woff"), url("../Fonts/pax_bold-webfont.woff2") format("woff2");
+}
+
 /*---header---*/
 /*---variable---*/
 /*---mixin----*/
@@ -64,16 +90,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 35px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 35px;
-}
-
-.names h2 {
-  height: 50px;
 }
 
 .menu_head {
@@ -83,7 +102,6 @@ main {
 .menu_head .fa-music {
   font-size: 100px;
   margin-top: 70px;
-  background: -webkit-linear-gradient(left, #F36D68, #F78F6A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -125,13 +143,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0px 7%;
-}
-
-.menu_footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 50px;
 }
 
 h4 {
@@ -183,12 +194,31 @@ body {
   color: #3d1319;
 }
 
+h4 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
 .note main {
   background-color: #fcdfdb;
+  font-family: "devon_shire";
+}
+
+.note .fa-music {
+  background: -webkit-linear-gradient(left, #F36D68, #F78F6A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu_head h2 {
+  padding-top: 40px;
+  padding-right: 10px;
+  height: 70px;
 }
 
 .delice main {
   background-color: #edefef;
+  font-family: "dancing";
 }
 
 .delice main h2 {
@@ -199,12 +229,25 @@ body {
 
 .chic main {
   background-color: #fff5fe;
+  font-family: "kaushan";
 }
 
 .chic main h2 {
   background: -webkit-linear-gradient(left, #d8852e, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.chic main .entre {
+  color: #c67412;
+}
+
+.chic main .plat {
+  color: #b079a6;
+}
+
+.chic main .dessert {
+  color: #8061d2;
 }
 
 .palette main {
@@ -238,19 +281,12 @@ body {
     margin-bottom: 10px;
   }
   main {
-    margin-top: 0px;
     padding-bottom: 50px;
+    margin-bottom: 40px;
   }
   main h2 {
-    font-size: 50px;
+    font-size: 70px;
     height: 60px;
-  }
-  main .names {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  section {
-    line-height: 5px;
   }
   section .row_menu {
     display: -webkit-box;
@@ -260,9 +296,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: center;
     padding: 0px;
   }
   .menu_footer .fa-music {
@@ -276,18 +310,23 @@ body {
   }
   h4 {
     margin: auto;
-  }
-  section {
-    line-height: 25px;
+    padding-top: 30px;
   }
   section p {
     margin: 5px;
   }
   section h2 {
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
   }
   h2 {
     font-size: 30px;
+  }
+  footer {
+    padding: 5px;
+  }
+  footer a {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style2.css.map */

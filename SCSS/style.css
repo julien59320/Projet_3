@@ -91,6 +91,32 @@ header a {
 }
 
 /*---gradiant---*/
+/*---font_face---*/
+@font-face {
+  font-family: "devon_shire";
+  src: url("../Fonts/devonshire-regular-webfont.woff") format("woff"), url("../Fonts/devonshire-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "croissant_one";
+  src: url("../Fonts/croissantone-regular-webfont.woff") format("woff"), url("../Fonts/croissantone-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dancing";
+  src: url("../Fonts/dancingscript-variablefont_wght-webfont.woff") format("woff"), url("../Fonts/dancingscript-variablefont_wght-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "kaushan";
+  src: url("../Fonts/kaushanscript-regular-webfont.woff") format("woff"), url("../Fonts/kaushanscript-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "pax_bold";
+  src: url("../Fonts/pax_bold-webfont.woff") format("woff"), url("../Fonts/pax_bold-webfont.woff2") format("woff2");
+}
+
 /*-----section---*/
 section {
   display: -webkit-box;
@@ -99,6 +125,15 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+h3 {
+  font-size: 70px;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 /*-----bloc_menu---*/
@@ -133,32 +168,31 @@ section {
 .menu_1 {
   background-color: #fcdfdb;
   margin-right: 100px;
+  font-family: "devon_shire";
 }
 
 .menu_1 h2 {
   color: #3c1218;
-  font-size: 44px;
 }
 
 .menu_1 h3 {
   color: #3c1218;
-  font-size: 40px;
 }
 
 .fa-music {
-  font-size: 70px;
   background: -webkit-linear-gradient(left, #F36D68, #F78F6A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 100px;
 }
 
 /*-----menu2---*/
 .menu_2 {
   background-color: #fff5fe;
+  font-family: "pax_bold";
 }
 
 .menu_2 h2 {
-  font-size: 44px;
   background: -webkit-linear-gradient(left, #d8852e, #905BFD);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -166,17 +200,16 @@ section {
 
 .menu_2 h3 {
   color: #d8852e;
-  font-size: 40px;
 }
 
 /*-----menu3---*/
 .menu_3 {
-  background-color: #f9f9f9;
+  background-color: #edefef;
   margin-right: 100px;
+  font-family: "dancing";
 }
 
 .menu_3 h2 {
-  font-size: 44px;
   background: -webkit-linear-gradient(left, #0431DF, #0887FB);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -184,16 +217,15 @@ section {
 
 .menu_3 h3 {
   color: #0887FB;
-  font-size: 40px;
 }
 
 /*-----menu4---*/
 .menu_4 {
-  background-color: #fdfdfd;
+  background-color: #fdfffd;
+  font-family: "kaushan";
 }
 
 .menu_4 h2 {
-  font-size: 44px;
   background: -webkit-linear-gradient(left, #3d9339, #c8fe94);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -201,7 +233,6 @@ section {
 
 .menu_4 h3 {
   color: #3d9339;
-  font-size: 40px;
 }
 
 /*-----transition_zoom---*/

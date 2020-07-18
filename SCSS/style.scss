@@ -2,19 +2,28 @@
     margin: 0px;
 }
 /*---variable---*/
-@import "../layout/utils/utils/variable.scss";
+@import "../utils/variable.scss";
 /*---mixin----*/
-@import "../layout/utils/utils/mixin.scss";
+@import "../utils/mixin.scss";
 /*---keyframes---*/
-@import "../layout/utils/utils/keyframes.scss";
+@import "../utils/keyframes.scss";
 /*---header---*/
-@import "../layout/utils/layout/header.scss";
+@import "../layout/header.scss";
 /*---gradiant---*/
-@import "../layout/utils/utils/gradiant.scss";
+@import "../utils/gradiant.scss";
+/*---font_face---*/
+@import "../Fonts/police.scss";
 /*-----section---*/
 section{
     display: flex;
     justify-content: center;
+}
+h3{
+    font-size: 70px;
+    padding-top: 50px;
+}
+h2{
+    font-size: 40px;
 }
 /*-----bloc_menu---*/
 .menu {
@@ -37,57 +46,53 @@ section{
 .menu_1{
     background-color: $back-color-m1;
     margin-right: 100px;
+    font-family: "devon_shire";
     h2{
         color: $color-m1 ;
-        font-size: 44px;
     }
     h3{
         color: $color-m1 ;
-        font-size: 40px;
+        
     }
 }
 .fa-music{
-    font-size: 70px;
     @include color-icones;
+    font-size: 100px;
     
 }
 /*-----menu2---*/
 .menu_2{
     background-color: $back-color-m2;
-
+    font-family: "pax_bold";
     h2{
-        font-size: 44px;
         @include gradient_chic;
     }
     h3{
         color: #d8852e;
-        font-size: 40px;
     }
 }
 /*-----menu3---*/
 .menu_3{
     background-color: $back-color-m3;
     margin-right: 100px;
+    font-family: "dancing";
     h2{
-        font-size: 44px;
         @include gradient_delice;
     }
     h3{
         color: #0887FB;
-        font-size: 40px;
     }
     
 }
 /*-----menu4---*/
 .menu_4{
     background-color: $back-color-m4;
+    font-family: "kaushan";
     h2{
-        font-size: 44px;
         @include gradient_palette;
     }
     h3{
         color: #3d9339;
-        font-size: 40px;
     }
  }
  /*-----transition_zoom---*/
@@ -137,7 +142,7 @@ aside{
     }
 }
 /*----footer----*/
-@import "../layout/utils/layout/footer.scss";
+@import "../layout/footer.scss";
 /*-----media_screen_tablette-----*/
 @media screen and (min-width:426px)and (max-width:768px){
     header{
