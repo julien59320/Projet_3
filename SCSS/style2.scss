@@ -18,6 +18,11 @@ h4{
     font-size: 40px;
     padding-bottom: 20px;
 }
+h4 {
+    text-decoration: none;
+
+}
+
 .note{
     main{
         background-color: $back-color-m1;
@@ -33,10 +38,10 @@ h4{
         padding-top: 40px;
         padding-right: 10px;
         height: 70px;
-    }
+        text-decoration: none;
+}
 }
 .delice{
-    
     main{
         background-color: $back-color-m3;
         font-family: "dancing";
@@ -71,6 +76,7 @@ h4{
         }
     }
 }
+
 @media screen and(max-width:768px){
     p{
         font-size: 20px;  
@@ -93,11 +99,17 @@ h4{
         margin-bottom: 10px;
     }
     main{
-        padding-bottom: 50px;
+        padding-bottom: 20px;
         margin-bottom: 40px;
         h2{
         font-size: 70px;
         height: 60px;
+        }
+    }
+    .menu_head{
+        h2{
+        margin: auto;
+        margin-top: 0px;
         }
     }
     section{
@@ -108,11 +120,7 @@ h4{
         padding: 0px ;
         }
     }
-    .menu_footer{
-        .fa-music{
-            margin-top: 50px;
-        }
-    } 
+
 }
 @media screen and(min-width:320px)and(max-width:767px){
     img{
@@ -136,6 +144,15 @@ h4{
     }
     h2{
         font-size: 30px;
+    }
+    .menu_footer{
+        h2{
+          margin-left: 30px;
+          font-size: 30px;  
+        }
+        .fa-music{
+            font-size: 40px;
+        }
     }
     footer{
         padding:5px;
