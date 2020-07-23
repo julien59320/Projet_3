@@ -14,14 +14,21 @@
 @import "../layout/footer.scss";
 
 /*---mentions_légales---*/
+
 section{
     width: 60%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    justify-items: center;
+    padding-bottom: 100px;
     margin: auto;
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 25px;
+            opacity: 0.8;
+        }
 }
 @media screen and(min-width:320px)and(max-width:767px){
     footer{
