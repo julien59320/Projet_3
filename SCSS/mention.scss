@@ -1,0 +1,33 @@
+/*---variable---*/
+@import "../utils/variable.scss";
+/*---mixin----*/
+@import "../utils/mixin.scss";
+/*---keyframes---*/
+@import "../utils/keyframes.scss";
+/*---header---*/
+@import "../layout/header.scss";
+/*---gradiant---*/
+@import "../utils/gradiant.scss";
+/*---font_face---*/
+@import "../Fonts/police.scss";
+/*---footer---*/
+@import "../layout/footer.scss";
+
+/*---mentions_légales---*/
+section{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+@media screen and(min-width:320px)and(max-width:767px){
+    footer{
+        padding:5px;
+            a{
+                font-size: 20px;
+            }
+    }
+}
